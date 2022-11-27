@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Coordinators</h1>
+
+<div id="coordinators">
+  <% @coordinators.each do |coordinator| %>
+    <%= render coordinator %>
+    <p>
+      <%= link_to "Show this coordinator", coordinator %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New coordinator", new_coordinator_path %>
